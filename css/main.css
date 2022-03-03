@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300|Raleway|Montserrat');
+
+* {
+    margin: 0; 
+    padding: 0;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    font-size: 16px;
+    background: url(../assets/images/bg.jpg) no-repeat center center fixed;
+    color: gray;
+    text-align: center;
+    height: 100%;
+}
+
+#block-container {
+    top: 50vh;
+    transform: translateY(-50%);
+    display: block;
+    margin: 0 auto;
+    width: 400px;
+    position: relative;
+    background-color: #f4f4f4;
+    border-radius: 7px;
+    padding:  5px 20px;
+    opacity: 0.92;
+    -webkit-animation-duration: 2 s;
+            animation-duration: 2 s;
+    -webkit-box-shadow: 18px 11px 135px -25px black;
+            box-shadow: 18px 11px 135px -25px black;
+    -webkit-transform-style: preserve-3d;
+            transform-style: preserve-3d;
+    -webkit-transition: 0.5s;
+            transition: 0.5s;
+    -webkit-perspective: 1500px;
+            perspective: 1500px;
+}
+
+#profile-image {
+    display: inline-block;
+    margin-top: 20px;
+    width: 200px;
+    height: 200px;
+    border-radius: 100px;
+    transition: all 0.3s ease-in-out;
+}
+
+@media screen and (max-width: 500px) {
+    #profile-image {
+        width: 120px;
+        height: 120px;
+    }
+}
+
+#profile-image:hover {
+    filter: none;
+    transform: scale(1.05);
+}
+
+
+#text-container {
+    font-family: 'Raleway', sans-serif;
+    display: inline-block;
+    margin-top: 20px;
+    margin-bottom: 0;
+}
+
+.link {
+    text-decoration: none;
+    font-size: 26px;
+    color: gray;
+}
+
+footer {
+    opacity: 0.4;
+    font-family: 'Raleway', sans-serif;
+    transition: all 0.5s ease-in-out;
+    margin: 5px auto;
+    position: absolute;
+    text-align: center;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    color: white;
+}
+
+@media screen and (max-width: 500px) {
+    footer {
+        display: none;
+    }
+}
+
+footer:hover {
+    opacity: 0.9;
+}
+
+.footer-text {
+    font-size: 12px;
+}
+
+.footer-text a {
+    text-decoration: none;
+    color: white;
+}
+
+.small-link {
+    font-size: 16px;
+}
+
+.highlight {
+    color: #8b2f5f;
+}
+
+h1 {
+    font-family: 'Open Sans Condensed', sans-serif;
+}
+
+@media screen and (max-width: 500px) {
+    
+    h1 {
+        font-size: 28px;
+    }
+    
+    #block-container {
+        width: 80%;
+    }
+
+}
